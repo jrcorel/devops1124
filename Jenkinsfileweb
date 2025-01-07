@@ -3,12 +3,12 @@ pipeline {
     
     stages {
         stage('Executar o playbook Ansible') {
-	    steps {
-		ansiblePlaybook(
-		    inventory:'ansible/hosts',
-		    playbook:'ansible/installweb.yml'
-		)
-	    }
-       	}
+	        steps {
+				ansiblePlaybook(
+		    		inventory:'ansible/hosts',
+		    		playbook:'ansible/installweb.yml'
+				)
+	    	}
+    	}
     }
 }
